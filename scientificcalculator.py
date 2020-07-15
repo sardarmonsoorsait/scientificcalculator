@@ -23,6 +23,15 @@ calc.grid(pady=20,padx=20)
 txtDisplay = Entry(calc,font=('arial',30,'bold'),bg='#b6d1c2',width=10,justify=RIGHT,highlightbackground="#023b1e",highlightcolor="#023b1e",highlightthickness=2)
 txtDisplay.grid(row=0,column=0,columnspan=7,ipady=10)
 txtDisplay.insert(0,'0')
+
+#----------------------------------------------------------------------------------------------------------------------------------------
+class calc():
+    def __init__(self):
+        self.total=0
+        self.current=""
+        self.input_value=True
+        
+    
 Button(calc,text="2nd",width=1,height="1",font="arial 7 bold",bd=1,bg="#2b4753",fg="#aaa",highlightbackground="#0a2618",
                              highlightcolor="#0a2618",
                              highlightthickness=2).grid(row=1,column=0,pady=10,padx=0)
